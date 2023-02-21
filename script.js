@@ -90,7 +90,7 @@ function get_city(){
 // Function that will be actived after get the data from the city that the user wrote on the input
 function get_wheater(data){
 // Adding Today's Day
-  city_name.innerHTML = data.city.name+' '+moment().format("(MM-DD-YYYY)");  
+  city_name.innerHTML = data.city.name+' '+moment().format("(DD-MM-YYYY)");  
 
 // Adding the temp, wind, humidity and uv_index about today on the dom
   temp.innerHTML = ' '+data.list[0].main.temp+'ºF';
@@ -134,7 +134,7 @@ function get_wheater_5(data){
 // Doing a loop to add the temp, wind, humidity and one image to the next 5 days weather
   for (i = 1; i <= 5; i++){
       var time_5 = document.querySelector('#time'+[i]);
-      time_5.textContent = moment().add([i],'days').format("MM/DD/YYYY");
+      time_5.textContent = moment().add([i],'days').format("DD/MM/YYYY");
 
 // Selecting the temp, wind, humidity and image from the html file
       var temp_5 = document.querySelector('#temp'+[i]);

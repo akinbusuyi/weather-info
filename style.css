@@ -8,7 +8,7 @@
 
 /* Adding some border and text color on the header tag */
 header{
-  background: linear-gradient(to right, #308abe, #030b61);
+  background: linear-gradient(to right, #f18c67, #f27341);
   color: white;
 }
 
@@ -24,6 +24,7 @@ input{
 button{
   width: 100%;
   margin-top: 15px;
+  border-radius: 0.2rem;
 }
 
 /* Making the hr tag bigger by adding some border */
@@ -39,7 +40,7 @@ li{
 
 /* Editing the style of the box that contains the next 5 days weather */
 .box_next_days{
-  background-color: rgb(39, 39, 66);
+  background-color: rgb(245, 105, 12);
   color: white;
   width: 100%;
   margin: 0 6px 0 6px;
@@ -53,7 +54,7 @@ li{
 
 /* Customizing the button that contains the cities name */
 .button_city{
-  background: rgb(111, 145, 209);
+  background: rgb(243, 162, 115);
   border-radius: 4px;
   color: white;
   padding: 5px 0 5px 0;

@@ -101,22 +101,22 @@ function get_wheater(data){
   // Adding the image that best represents the general weather of the day
   if (data.list[0].weather[0].main == "Clear"){
     img_weather_today.classList.remove('hide');
-    img_weather_today.setAttribute('src', '../assets/images/sun.png');
+    img_weather_today.setAttribute('src', 'images/Sunny.jpeg');
     img_weather_today.setAttribute('alt', 'clear wheater');
   
   } else if (data.list[0].weather[0].main == "Clouds"){
     img_weather_today.classList.remove('hide');
-    img_weather_today.setAttribute('src', '../assets/images/cloudy.png');
+    img_weather_today.setAttribute('src', 'images/Cloudy sky.jpeg');
     img_weather_today.setAttribute('alt', 'clouds');
   
   } else if (data.list[0].weather[0].main == "Rain"){
     img_weather_today.classList.remove('hide');
-    img_weather_today.setAttribute('src', '../assets/images/rain.png');
+    img_weather_today.setAttribute('src', 'images/rain.jpeg');
     img_weather_today.setAttribute('alt', 'rain');
   
   } else if (data.list[0].weather[0].main == "Snow"){
     img_weather_today.classList.remove('hide');
-    img_weather_today.setAttribute('src', '../assets/images/snowy.png');
+    img_weather_today.setAttribute('src', 'images/snow.jpeg');
     img_weather_today.setAttribute('alt', 'snow');
   
   } else{
